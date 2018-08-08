@@ -51,3 +51,29 @@ let obj = {
     }
 };
 obj[s1](123);
+
+// es6 可以为函数指定默认值
+function log(x, y = 'World') {
+    console.log(x, y);
+}
+
+log('Hello'); // Hello World
+
+// ###########################
+var f = v => v;
+log(f("test"));
+
+// 等同于
+/*
+var f = function (v) {
+    return v;
+};*/
+
+
+// 正常函数写法
+[1,2,3].map(function (x) {
+    return x * x;
+});
+
+// 箭头函数写法
+[1,2,3].map(x => x * x);
