@@ -25,7 +25,7 @@ server.route({
 });
 
 const init = async () => {
-    await server.register(require('insert'));
+    await server.register(require('inert'));
 
     server.route({
         method: 'GET',
