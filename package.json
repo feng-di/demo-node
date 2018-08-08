@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/feng-di/demo-node#readme",
   "dependencies": {
-    "hapi": "^17.5.3",
-    "insert": "^1.0.1"
+    "hapi": "^17.5.3"
   }
 }
