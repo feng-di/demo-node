@@ -25,6 +25,19 @@ server.route({
 });
 
 const init = async () => {
+    await server.register(require('insert'));
+
+    server.route({
+        method: 'GET',
+        path: '/hello',
+        handler: (request, h) => {
+
+            return h.file('./public/hello.html');
+        }
+    });
+
+
+
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
 };
