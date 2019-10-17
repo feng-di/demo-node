@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node_1:
+    build: docker/node/
+    ports:
+      - '19229:9229'
+    volumes:
+      - '.:/appli:cached'
+    environment:
+      - 'NODE_ENV=dev'
