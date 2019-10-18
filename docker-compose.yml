@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  node_1:
+  node:
     build: docker/node/
     ports:
       - '19229:9229'
