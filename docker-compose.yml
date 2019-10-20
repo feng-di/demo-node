@@ -9,3 +9,4 @@ services:
       - '.:/appli:cached'
     environment:
       - 'NODE_ENV=dev'
+
